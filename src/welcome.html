@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome!</title>
+
+<style>
+h1{
+    text-align: center;
+    color: #0099ff;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+.description{
+    text-align: center;
+    color: #0099ff;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+button{
+    background-color: #0099ff;
+       border-radius: 10px;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    transition: ease-in-out 0.3s;
+}
+button:hover{
+    
+    box-shadow: 0px 0px 10px #0099ff;
+}
+input[type=text], select {
+    width: 20rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+.form-container{
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+button[type=submit] {
+    width: 100%;
+    background-color: #0099ff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    grid-column:1 / span 2 ;
+}
+  </style>
+
+
+  </head>
+  <body>
+         <div class="form-container">
+           <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" placeholder="Enter your age">
+      <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" placeholder="Enter your password">
+        <label for="password">Confirm Password:</label>
+        <input type="text" id="password" name="password" placeholder="Confirm your password">
+        <button type="submit">Submit</button>
+    
+    </div>
+
+
+  </body>
+</html>
+
